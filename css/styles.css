@@ -1,0 +1,20 @@
+/* Espacement supplémentaire sous la navbar fixe */
+body {
+    padding-top: 70px;
+}
+
+/* Effet hover sur les cartes */
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+}
+
+/* Personnalisation bouton */
+.btn-primary {
+    background-color: #ff6600;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff8533;
+}
