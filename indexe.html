@@ -4,118 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boutique Élégance</title>
-
-    <!-- Bootstrap CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Fichier CSS personnalisé -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Boutique Élégance</a>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <img class="logo-image" src="images/logo_ene.jpg" alt="Logo de la boutique">
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#produits">Produits</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Bouton mobile -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Liens -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="#produits">Produits</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-<!-- ================= HERO SECTION ================= -->
-<section id="home" class="bg-primary text-white text-center py-5 mt-5">
-  <div class="container">
-    <h1 class="display-4">Découvrez nos meilleures offres</h1>
-    <p class="lead">Des produits de qualité à des prix compétitifs.</p>
-    <a href="#produits" class="btn btn-light btn-lg">Voir les produits</a>
-  </div>
-</section>
-
-
-<!-- ================= SECTION PRODUITS ================= -->
-<section id="produits" class="py-5">
-  <div class="container text-center">
-    <h2 class="mb-4">Nos Produits</h2>
-
-    <div class="row g-4">
-
-      <!-- Produit 1 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card h-100 shadow">
-          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Montre">
-          <div class="card-body">
-            <h5 class="card-title">Montre Classique</h5>
-            <p class="card-text">Montre élégante adaptée à toutes les occasions.</p>
-            <a href="#" class="btn btn-primary">Acheter maintenant</a>
-          </div>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <h1>Découvrez nos meilleures offres</h1>
+            <p>Des produits de qualité à des prix compétitifs.</p>
+            <img src="images/image_hero.jpg" alt="Sac à main" class="hero-image">
+            <a href="#produits" class="btn-primary">Voir les produits</a>
         </div>
-      </div>
+    </section>
 
-      <!-- Produit 2 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card h-100 shadow">
-          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Sac">
-          <div class="card-body">
-            <h5 class="card-title">Sac Premium</h5>
-            <p class="card-text">Sac moderne et pratique en cuir véritable.</p>
-            <a href="#" class="btn btn-primary">Acheter maintenant</a>
-          </div>
+    <!-- SECTION PRODUITS -->
+    <section id="produits" class="products-section">
+        <h2>Nos Produits</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="images/montre1.jpg">
+                <h3>Montre Classique</h3>
+                <p>Montre élégante adaptée à toutes les occasions.</p>
+                <a href="#" class="btn-primary">Acheter maintenant</a>
+            </div>
+            <div class="product-card">
+                <img src="images/sac_à_main.jpg" alt="Sac">
+                <h3>Sac Premium</h3>
+                <p>Sac moderne et pratique en cuir véritable.</p>
+                <a href="#" class="btn-primary">Acheter maintenant</a>
+            </div>
+            <div class="product-card">
+                <img src="images/chaussure_sport.jpg" alt="Chaussures">
+                <h3>Chaussures Sport</h3>
+                <p>Confort optimal pour votre quotidien.</p>
+                <a href="#" class="btn-primary">Acheter maintenant</a>
+            </div>
+            <div class="product-card">
+                <img src="images/casques.jpg" alt="Casque">
+                <h3>Casque Audio</h3>
+                <p>Son haute qualité avec réduction de bruit.</p>
+                <a href="#" class="btn-primary">Acheter maintenant</a>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Produit 3 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card h-100 shadow">
-          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Chaussures">
-          <div class="card-body">
-            <h5 class="card-title">Chaussures Sport</h5>
-            <p class="card-text">Confort optimal pour votre quotidien.</p>
-            <a href="#" class="btn btn-primary">Acheter maintenant</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produit 4 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card h-100 shadow">
-          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Casque">
-          <div class="card-body">
-            <h5 class="card-title">Casque Audio</h5>
-            <p class="card-text">Son haute qualité avec réduction de bruit.</p>
-            <a href="#" class="btn btn-primary">Acheter maintenant</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-<footer id="contact" class="bg-dark text-white text-center py-4">
-  <div class="container">
-    <p class="mb-0">© 2026 Boutique Élégance | Tous droits réservés</p>
-  </div>
-</footer>
-
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FOOTER -->
+    <footer id="contact">
+        <p>© 2026 Boutique Élégance | Tous droits réservés</p>
+    </footer>
 
 </body>
 </html>
